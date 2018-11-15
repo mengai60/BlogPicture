@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>简历-源文件</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">孔祥磊</h1>
+
+<p>5年Android应用开发经验，同时有参与iOS和小程序开发，掌握Java、OC、Swift、JavaScript语言，做过即时通信类、地图定位类、资讯类、智能硬件类、彩票类APP，对视频编解码有一定了解</p>
+
+<hr>
+
+<h2 id="toc_1">基本信息</h2>
+
+<ul>
+<li>男 | 1990 | 未婚</li>
+<li>本科 | 佳木斯大学 | 通信工程 | 2013届毕业生</li>
+<li>手机：18688990382</li>
+<li>Email：15545022505@163.com</li>
+<li>QQ：745338093</li>
+</ul>
+
+<h2 id="toc_2">求职意向</h2>
+
+<ul>
+<li>Android应用开发</li>
+<li>期望薪资：税前月薪20k~25k</li>
+<li>到岗时间：2个月内</li>
+</ul>
+
+<h2 id="toc_3">工作经历</h2>
+
+<h3 id="toc_4">深圳英卓信息技术有限公司 （2015年1月 ~ 至今） 移动部门经理</h3>
+
+<h4 id="toc_5">运踪宝</h4>
+
+<blockquote>
+<p>项目描述</p>
+</blockquote>
+
+<p>一个跨国物流信息的管理平台，可以实现对货物物流信息的创建/修改/删除，并可以通过地图对货物的位置进行定位查看；同时提供了线路的展示/报价/下单功能。</p>
+
+<blockquote>
+<p>责任分工</p>
+</blockquote>
+
+<p>该项目为单人项目，我负责对该项目的Android/iOS/小程序端进行开发。其中小程序端仅开发了基础的根据货单使用地图显示轨迹功能。</p>
+
+<blockquote>
+<p>使用技术</p>
+</blockquote>
+
+<ul>
+<li>使用 <strong>RecyclerView+SwipeRefreshLayout</strong> 显示列表及上下拉刷新功能</li>
+<li>使用 <strong>百度地图SDK</strong> 显示地图及轨迹绘制</li>
+<li>使用 <strong>Realm</strong> 对城市车站信息进行存储和查询</li>
+<li>使用 <strong>Retrofit+RxJava+GSON</strong> 与服务器通信</li>
+<li>使用 <strong>ARouter</strong> 维护Activity之间的界面跳转</li>
+<li>使用 <strong>EventBus</strong> 实现界面间数据传递</li>
+</ul>
+
+<h4 id="toc_6">彩票项目</h4>
+
+<blockquote>
+<p>项目描述</p>
+</blockquote>
+
+<p>一个福彩彩票购买平台，可以对当前的福彩彩种进行选号/购买/查看历史/走势/充值/提现。</p>
+
+<blockquote>
+<p>责任分工</p>
+</blockquote>
+
+<p>该项目为2人完成，我主要负责项目框架的搭建；网络请求API的封装；常规玩法的界面及逻辑;
+注数/价格计算的封装/逻辑。之后项目用ReactNative改写，参与了关于账户安全和消息模块的开发。</p>
+
+<blockquote>
+<p>使用技术</p>
+</blockquote>
+
+<ul>
+<li>使用 <strong>Handler</strong> 实现首页多个彩种的投注倒计时功能</li>
+<li>使用 <strong>自定义View</strong> 实现走势图效果</li>
+<li>使用 <strong>Animator</strong> 实现号码篮的展开关闭动画</li>
+<li>使用 <strong>ItemTouchHelper</strong> 实现对彩票及玩法的排序</li>
+<li>使用 <strong>RxJava/RxJS</strong> 实现本地数据的回调</li>
+</ul>
+
+<h4 id="toc_7">亿家联项目</h4>
+
+<blockquote>
+<p>项目描述</p>
+</blockquote>
+
+<p>“松果智能手表”配套使用的App，可以远距离与手表实现语音消息，显示手表实时的定位数据，控制手表进行心率/血压测试，根据手表上传的数据进行步数/心率/血压/睡眠质量的图表展示，
+并对一些可能出现的危险情况进行应用通知。</p>
+
+<blockquote>
+<p>责任分工</p>
+</blockquote>
+
+<p>该项目为2人完成，我主要负责项目框架搭建；网络请求API的封装；聊天及通讯录模块；地图轨迹模块；用户模块。</p>
+
+<blockquote>
+<p>使用技术</p>
+</blockquote>
+
+<ul>
+<li>网络请求使用 <strong>Netty</strong> 框架实现公司私有协议，使用 <strong>TCP/IP</strong> 协议与服务器进行通信</li>
+<li>使用 <strong>百度地图/GoogleMap API</strong> 实现地图及轨迹展示</li>
+<li><strong>自定义View</strong> 实现健康数据图表</li>
+<li>集成 <strong>极光推送SDK</strong> 实现即时聊天的离线推送部分</li>
+<li>使用 <strong>GreenDAO</strong> 存储本地聊天记录</li>
+</ul>
+
+<h3 id="toc_8">城市联合网络电视台 （2014年6月 ~ 2015年1月）Android工程师</h3>
+
+<h4 id="toc_9">掌上城市项目</h4>
+
+<blockquote>
+<p>项目描述</p>
+</blockquote>
+
+<p>掌上城市系列项目，是CUTV为各地方城市打造的新媒体资讯类App。其中涉及新闻、咨询、视频、投票、图文等多个模块。</p>
+
+<blockquote>
+<p>责任分工</p>
+</blockquote>
+
+<p>我当时主要负责Android端“掌上南通”的新需求的开发，及在“掌上南通”的基础上，根据其他地方台的需求clone不同的版本（包括：“掌上邯郸”、“掌上鹤城”、“掌上深圳”），并协助完成上架。项目期间，我重构了“掌上南通”的代码，去除了Android SDK 2.2版本时很多过时的API，根据业务实际场景，使用Fragment/PopupWindow等新组件，重新规划布局。</p>
+
+<blockquote>
+<p>使用技术</p>
+</blockquote>
+
+<ul>
+<li>资讯详情使用 <strong>WebView</strong> 实现本地Html加载</li>
+<li>使用 <strong>LruCache</strong> 实现图片的3级缓存</li>
+<li>投票结果的 <strong>自定义View</strong> 实现</li>
+</ul>
+
+<h3 id="toc_10">深圳领航员数码技术有限公司 （2013年11月 ~ 2014年6月）研发部工程师</h3>
+
+<h4 id="toc_11">领航员监控项目</h4>
+
+<blockquote>
+<p>项目描述</p>
+</blockquote>
+
+<p>LHY Live（领航员监控）是一款与公司网络摄像头对接的实时视频监控软件。</p>
+
+<blockquote>
+<p>责任分工</p>
+</blockquote>
+
+<p>负责Android端及iOS端的开发，实现对当前无线局域网内所有网络摄像机的查找和添加；实现视频分辨率的主子码流切换及云台控制等功能；对监控画面拍照、录制并支持本地录像的浏览、播放、快进/退等功能。</p>
+
+<blockquote>
+<p>使用技术</p>
+</blockquote>
+
+<ul>
+<li>使用 <strong>NDK</strong> 编译 <strong>FFMpeg</strong> 库</li>
+<li>使用 <strong>JNI</strong> 编写H264编解码接口</li>
+<li>使用 <strong>Socket</strong> 实现从硬件获取视频流</li>
+<li>使用 <strong>SufaceView</strong> 显示视频画面</li>
+</ul>
+
+<h2 id="toc_12">专业技能</h2>
+
+<ul>
+<li>熟练掌握Android的API，理解Android的体系结构。</li>
+<li>对Android中界面绘制/事件分发/消息队列/后台运行/数据存储等的原理有较深理解。</li>
+<li>熟悉XML，HTTP，TCP/IP等协议。能够使用Socket和NIO框架进行开发。</li>
+<li>熟练运用常用开源库，如Retrofit、RxJava、Dragger、ButterKnife、Glide等。</li>
+<li>具有良好的代码规范和注释，能熟练运用设计模式进行项目框架搭建。</li>
+<li>能够运用NDK进行Java本地化编程并调用生成的动态库。</li>
+<li>有iOS/小程序开发经验，熟悉整套开发流程，熟悉一整套的软件开发过程，具有多个客户端的独立开发经验。</li>
+</ul>
+
+<h2 id="toc_13">自我评价</h2>
+
+<ul>
+<li>对工作专心；对代码质量方面自我要求近乎苛刻。</li>
+<li>学习能力强；乐于接受新鲜事物。</li>
+<li>沟通能力强；善于听取同事的意见并及时作出回应。</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_14">感谢您花时间阅读我的简历，期待能有机会和您共事。</h3>
+
+
+
+
+</body>
+
+</html>
